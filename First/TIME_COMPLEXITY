@@ -1,0 +1,79 @@
+					Time and Space Complexity
+
+i = 1, s = 1
+
+Q1
+while(i<=n){
+	i++;
+		}		
+								Ans: O(n)
+
+Q2
+while(i<=n){
+	i = i+2;
+		}
+								Ans: O(n)
+
+Q3
+while(i<=n){
+i = i+k;
+		}
+								Ans: O(n)	//for k<<n................for k-->n complexity = O(1)		
+
+Q4
+while(i<=n){
+i*=2;
+}
+								Ans: O(Logn)// base 2
+
+Q5
+while(i<=n){
+i*=3;
+}
+								Ans: O(Logn)// base 3
+
+Q6
+while(i<=n){
+i*=k;
+}
+								Ans: O(Logn)// base k   
+
+
+Q7
+while(i<=n){
+i*=2;
+i*=3;
+}
+								Ans: O(Logn)// base 6
+
+Q8
+while(i<=n){
+	i = i+2;
+	i = i+3;
+		}
+								Ans: O(n)   	//for n>>5
+
+Q9
+while(n>0){
+n = n/2;
+}
+								Ans: O(Logn)// base 2
+								
+Q10
+int i = 1; 
+		int s = 1;
+		while(s<1000) {
+			i++;
+			s = s+i;
+			System.out.println(count++ +"  " +i +"  "+ s);
+		}
+																		Ans: O(sqrt(n))
+																		
+Explanation	:																	
+		Each iteration calculates sum of k natural nos.
+		k(k+1)/2 > n
+		k^2	>n
+		k > n^1/2																
+		
+								
+		
